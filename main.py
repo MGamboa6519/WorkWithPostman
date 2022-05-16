@@ -9,7 +9,7 @@ from flask import Flask
 app = Flask('__main__')
 #Create an instance from Flask with the name __name__
 
-@app.route('/test', methods=['GET'])#From App you would pull thse items
+@app.route('/', methods=['GET'])#From App you would pull thse items
 def go_home():
     return 'The Fitness Gram Pacer Test is a multistage...!'
 
