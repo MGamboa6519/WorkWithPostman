@@ -13,9 +13,9 @@ device = {
     "code":"112233",
     "descrip":"Temp, Sensor",
     "value":67   
-}
+}#The dictionary we are going to be showing
 
-@app.route('/devices', methods=['GET'])#From App you would pull thse items
+@app.route('/devices', methods=['GET'])#Shows devices at the end point i.e the dictionary above.
 def go_home():
     return device
 
