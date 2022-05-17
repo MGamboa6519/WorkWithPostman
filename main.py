@@ -27,8 +27,9 @@ def save_user():
 
 @app.route('/', methods=['POST'])
 def save_device():
-    device = request.json
-    return device
+    devices = request.json
+    return devices
+
 
 if __name__ == '__main__':#Runs the application since the project name is the same
     app.run(debug=True, port=5000, host='0.0.0.0')
